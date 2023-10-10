@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        /* Add custom CSS for adjusting the container position */
+        .container {
+        margin-top: 50px;
+        }
+        .text-center{
+            color: #3a6cf4;
+        }
+        .container p{
+            font-size: 1.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">AnasHakim</a>
+
+        <nav class="nav">
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Container for the content -->
+    <div class="container">
+        <!-- Row for a horizontal alignment -->
+        <div class="row">
+        <!-- Column for centering and adding content -->
+        <div class="col-md-6 offset-md-3 mt-5">
+            <!-- Heading centered at the top -->
+            <h1 class="text-center">About Me</h1>
+            <!-- Introduction and passion -->
+            <p>
+                I’m a Backend Engineer with a good foundation in AI, backed by two years of professional experience. 
+                Currently pursuing a Master's degree in Computer Science, my goal is to leverage my expertise and 
+                ongoing education to contribute to innovative projects that bridge the gap between cutting-edge 
+                technology and real-world applications.   
+            </p>
+
+            <!-- Button to toggle additional information -->
+            
+            <button id="toggleBtn" class="btn btn-primary">More Info</button>
+            <div id="moreInfo" style="display: none;">
+                <p>I am passionate about creating scalable and efficient solutions, 
+                    and I am eager to collaborate with forward-thinking teams to drive technological advancements in the field 
+                    of software engineering and artificial intelligence.
+                </p>
+            </div>
+
+        </div> <!-- End of content column -->
+        </div> <!-- End of row -->
+    </div> <!-- End of container -->
+
+    <script>
+        // Ensure DOM is loaded before running the script
+        $(document).ready(function() {
+            $('#toggleBtn').click(function () {
+                $('#moreInfo').toggle();
+            });
+        });
+    </script>
+    
+    <!-- Bootstrap JavaScript (optional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
